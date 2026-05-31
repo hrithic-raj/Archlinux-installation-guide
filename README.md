@@ -1,74 +1,55 @@
-git clone https://github.com/caelestia-dots/caelestia.git ~/.local/share/caelestia
+==> Leaving fakeroot environment.
+==> Finished making: qtengine 0.2.1-1 (Sun 31 May 2026 02:00:23 PM IST)
+==> Cleaning up...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
 
+Packages (1) qtengine-0.2.1-1
 
-fish ./install.fish \
-  --aur-helper yay \
-  --vscode code
+Total Installed Size:  0.50 MiB
 
+:: Proceed with installation? [Y/n] 
+(1/1) checking keys in keyring                                                                                                                 [########################################################################################] 100%
+(1/1) checking package integrity                                                                                                               [########################################################################################] 100%
+(1/1) loading package files                                                                                                                    [########################################################################################] 100%
+(1/1) checking for file conflicts                                                                                                              [########################################################################################] 100%
+(1/1) checking available disk space                                                                                                            [########################################################################################] 100%
+:: Processing package changes...
+(1/1) installing qtengine                                                                                                                      [########################################################################################] 100%
+==> NOTE: You need to make a config for qtengine before installing.
+    The default config file can be found in /etc/qtengine/config.example.json
+    Copy it to ~/.config/qtengine/config.json and modify accordingly.
+    Then, set the environment variable `QT_QPA_PLATFORMTHEME` to `qtengine` to use qtengine.
 
-[hrj@HRJ caelestia]$ fish ./install.fish \
-  --aur-helper yay \
-  --vscode code
-install.fish: expected <= 0 arguments; got 1
-[hrj@HRJ caelestia]$ ^C
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+error: can't build caelestia-meta-r183.cf94e7f-1, deps not satisfied: caelestia-shell
+error: packages failed to build: caelestia-shell-1.6.2-1  caelestia-meta-r183.cf94e7f-1
+:: /home/hrj/.config/hypr already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing hypr* configs...
+HYPRLAND_INSTANCE_SIGNATURE not set! (is hyprland running?)
 
+:: /home/hrj/.config/starship.toml already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing starship config...
+:: /home/hrj/.config/foot already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing foot config...
+:: /home/hrj/.config/fish already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing fish config...
+:: /home/hrj/.config/fastfetch already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing fastfetch config...
+:: /home/hrj/.config/uwsm already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing uwsm config...
+:: /home/hrj/.config/btop already exists. Overwrite? [Y/n] y
+:: Removing...
+:: Installing btop config...
+HYPRLAND_INSTANCE_SIGNATURE not set! (is hyprland running?)
 
-
-[hrj@HRJ caelestia]$ fish ./install.fish
-╭─────────────────────────────────────────────────╮
-│      ______           __          __  _         │
-│     / ____/___ ____  / /__  _____/ /_(_)___ _   │
-│    / /   / __ `/ _ \/ / _ \/ ___/ __/ / __ `/   │
-│   / /___/ /_/ /  __/ /  __(__  ) /_/ / /_/ /    │
-│   \____/\__,_/\___/_/\___/____/\__/_/\__,_/     │
-│                                                 │
-╰─────────────────────────────────────────────────╯
-:: Welcome to the Caelestia dotfiles installer!
-:: Before continuing, please ensure you have made a backup of your config directory.
-:: [1] Two steps ahead of you!  [2] Make one for me please!
-
-
-
-
-
-:: Before continuing, please ensure you have made a backup of your config directory.
-:: [1] Two steps ahead of you!  [2] Make one for me please!
-:: => 1
-:: paru not installed. Installing...
-[sudo] password for hrj: 
-warning: git-2.54.0-1 is up to date -- skipping
-warning: base-devel-1-2 is up to date -- skipping
- there is nothing to do
-Cloning into 'paru'...
-remote: Enumerating objects: 196, done.
-remote: Counting objects: 100% (196/196), done.
-remote: Compressing objects: 100% (140/140), done.
-remote: Total 196 (delta 57), reused 195 (delta 56), pack-reused 0 (from 0)
-Receiving objects: 100% (196/196), 63.94 KiB | 10.66 MiB/s, done.
-Resolving deltas: 100% (57/57), done.
-==> Making package: paru 2.1.0-2 (Sun 31 May 2026 01:46:43 PM IST)
-==> Checking runtime dependencies...
-==> Checking buildtime dependencies...
-==> Installing missing dependencies...
-[sudo] password for hrj: 
-:: There are 2 providers available for cargo:
-:: Repository extra
-   1) rust  2) rustup
-
-Enter a number (default=1): ^C
-Interrupt signal received
-
-==> ERROR: 'pacman' failed to install missing dependencies.
-==> Missing dependencies:
-  -> cargo
-==> ERROR: Could not resolve all dependencies.
-fish: Unknown command: paru
-./install.fish (line 147): 
-        $aur_helper --gendb
-        ^~~~~~~~~~^
-:: Installing metapackage...
-fish: Unknown command: paru
-./install.fish (line 160): 
-    $aur_helper -Ui $noconfirm
-    ^~~~~~~~~~^
-:: /home/hrj/.config/hypr already exists. Overwrite? [Y/n] 
+:: Done!
+[hrj@HRJ caelestia]$ 
