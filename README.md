@@ -15,3 +15,14 @@ local/xf86-video-nouveau 1.0.18-1 (xorg-drivers)
 00:02.0 VGA compatible controller: Intel Corporation CometLake-H GT2 [UHD Graphics] (rev 05)
 01:00.0 VGA compatible controller: NVIDIA Corporation TU117M [GeForce GTX 1650 Mobile / Max-Q] (rev a1)
 [hrj@HRJ ~]$ 
+
+
+
+
+
+
+
+[hrj@HRJ ~]$ sudo pacman -S nvidia nvidia-utils nvidia-settings
+[sudo] password for hrj: 
+error: target not found: nvidia
+[hrj@HRJ ~]$ 
