@@ -1,64 +1,60 @@
-[hrj@HRJ ~]$ yay --version
-yay v12.5.7 - libalpm v16.0.1
-[hrj@HRJ ~]$ lspci -K | grep -A 3 NVIDIA
-lspci: invalid option -- 'K'
-Usage: lspci [<switches>]
+-- Installing: /home/hrj/.cache/yay/quickshell-git/pkg/quickshell-git/usr/lib/qt6/qml/Quickshell/Networking/qmldir
+-- Installing: /home/hrj/.cache/yay/quickshell-git/pkg/quickshell-git/usr/lib/qt6/qml/Quickshell/Networking/quickshell-network.qmltypes
+-- Installing: /home/hrj/.cache/yay/quickshell-git/pkg/quickshell-git/usr/share/applications/org.quickshell.desktop
+-- Installing: /home/hrj/.cache/yay/quickshell-git/pkg/quickshell-git/usr/share/icons/hicolor/scalable/apps/org.quickshell.svg
+==> Tidying install...
+  -> Removing libtool files...
+  -> Removing static library files...
+  -> Purging unwanted files...
+  -> Copying source files needed for debug symbols...
+  -> Compressing man and info pages...
+==> Checking for packaging issues...
+==> WARNING: Package contains reference to $srcdir
+usr/src/debug/quickshell-git/quickshell/build/src/network/nm/dbus_nm_connection_settings.h
+usr/src/debug/quickshell-git/quickshell/build/src/network/nm/dbus_nm_backend.h
+usr/src/debug/quickshell-git/quickshell/build/src/dbus/dbusmenu/dbus_menu.h
+usr/src/debug/quickshell-git/quickshell/build/src/dbus/dbus_objectmanager.h
+usr/bin/quickshell
+==> Creating package "quickshell-git"...
+  -> Generating .PKGINFO file...
+  -> Generating .BUILDINFO file...
+  -> Generating .MTREE file...
+  -> Compressing package...
+==> Leaving fakeroot environment.
+==> Finished making: quickshell-git 0.3.0.r4.g4b4fca3-1 (Sun 31 May 2026 01:23:37 PM IST)
+==> Cleaning up...
+loading packages...
+resolving dependencies...
+looking for conflicting packages...
 
-Basic display modes:
--mm		Produce machine-readable output (single -m for an obsolete format)
--t		Show bus tree
+Packages (1) quickshell-git-0.3.0.r4.g4b4fca3-1
 
-Display options:
--v		Be verbose (-vv or -vvv for higher verbosity)
--k		Show kernel drivers handling each device
--x		Show hex-dump of the standard part of the config space
--xxx		Show hex-dump of the whole config space (dangerous; root only)
--xxxx		Show hex-dump of the 4096-byte extended config space (root only)
--b		Bus-centric view (addresses and IRQ's as seen by the bus)
--D		Always show domain numbers
--P		Display bridge path in addition to bus and device number
--PP		Display bus path in addition to bus and device number
+Total Installed Size:  193.81 MiB
 
-Resolving of device IDs to names:
--n		Show numeric IDs
--nn		Show both textual and numeric IDs (names & numbers)
--q		Query the PCI ID database for unknown IDs via DNS
--qq		As above, but re-query locally cached entries
--Q		Query the PCI ID database for all IDs via DNS
+:: Proceed with installation? [Y/n] y
+(1/1) checking keys in keyring                                                                                                  [#############################################################################] 100%
+(1/1) checking package integrity                                                                                                [#############################################################################] 100%
+(1/1) loading package files                                                                                                     [#############################################################################] 100%
+(1/1) checking for file conflicts                                                                                               [#############################################################################] 100%
+(1/1) checking available disk space                                                                                             [#############################################################################] 100%
+:: Processing package changes...
+(1/1) installing quickshell-git                                                                                                 [#############################################################################] 100%
+:: Running post-transaction hooks...
+(1/3) Arming ConditionNeedsUpdate...
+(2/3) Updating icon theme caches...
+(3/3) Updating the desktop file MIME type cache...
+checking dependencies...
+:: cmake optionally requires ninja: for ninja generator
 
-Selection of devices:
--s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
--d [<vendor>]:[<device>][:<class>]		Show only devices with specified IDs
+Packages (3) cli11-2.6.2-1  ninja-1.13.2-3  qt6-shadertools-6.11.1-1
 
-Other options:
--i <file>	Use specified ID database instead of /usr/share/hwdata/pci.ids
--p <file>	Look up kernel modules in a given file instead of default modules.pcimap
--M		Enable `bus mapping' mode (dangerous; root only)
+Total Removed Size:  6.57 MiB
 
-PCI access options:
--A <method>	Use the specified PCI access method (see `-A help' for a list)
--O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
--G		Enable PCI access debugging
--H <mode>	Use direct hardware access (<mode> = 1 or 2)
--F <file>	Read PCI configuration dump from a given file
-[hrj@HRJ ~]$ quickshell --version
-bash: quickshell: command not found
-[hrj@HRJ ~]
-$ 
-
-
-
-
-
-
-
-[hrj@HRJ ~]$ lspci -k | grep -A 3 NVIDIA
-01:00.0 VGA compatible controller: NVIDIA Corporation TU117M [GeForce GTX 1650 Mobile / Max-Q] (rev a1)
-	Subsystem: ASUSTeK Computer Inc. Device 170d
-	Kernel driver in use: nouveau
-	Kernel modules: nouveau
-01:00.1 Audio device: NVIDIA Corporation Device 10fa (rev a1)
-	Subsystem: ASUSTeK Computer Inc. Device 170d
-	Kernel driver in use: snd_hda_intel
-	Kernel modules: snd_hda_intel
-[hrj@HRJ ~]$ ^C
+:: Do you want to remove these packages? [Y/n] 
+:: Processing package changes...
+(1/3) removing qt6-shadertools                                                                                                  [#############################################################################] 100%
+(2/3) removing ninja                                                                                                            [#############################################################################] 100%
+(3/3) removing cli11                                                                                                            [#############################################################################] 100%
+:: Running post-transaction hooks...
+(1/1) Arming ConditionNeedsUpdate...
+[hrj@HRJ ~]$ 
