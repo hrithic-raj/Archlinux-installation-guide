@@ -14,3 +14,16 @@ assets  CMakeLists.txt  components  extras  flake.lock  flake.nix  LICENSE  modu
 [hrj@HRJ ~]$ ~/.local/share/caelestia/install.fish
 bash: /home/hrj/.local/share/caelestia/install.fish: No such file or directory
 [hrj@HRJ ~]$ 
+
+
+
+
+sudo pacman -S \
+kitty \
+waybar \
+rofi-wayland \
+thunar \
+dunst \
+wl-clipboard \
+brightnessctl \
+networkmanager
