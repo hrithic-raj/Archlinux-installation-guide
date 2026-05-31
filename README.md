@@ -39,4 +39,37 @@ extra/ffnvcodec-headers 13.0.19.0-1
     FFmpeg version of headers required to interface with Nvidias codec APIs
 extra/hip-runtime-nvidia 7.2.3-1
     Heterogeneous Interface for Portability (Nvidia runtime)
+[hrj@HRJ ~]$ sudo pacman -Syu
+:: Synchronizing package databases...
+ core is up to date
+ extra is up to date
+:: Starting full system upgrade...
+ there is nothing to do
+[hrj@HRJ ~]$ pacman -Qi archlinux-keyring
+Name            : archlinux-keyring
+Version         : 20260420-1
+Description     : Arch Linux PGP keyring
+Architecture    : any
+URL             : https://gitlab.archlinux.org/archlinux/archlinux-keyring/
+Licenses        : GPL-3.0-or-later
+Groups          : None
+Provides        : None
+Depends On      : pacman
+Optional Deps   : None
+Required By     : base  base-devel
+Optional For    : None
+Conflicts With  : None
+Replaces        : None
+Installed Size  : 1763.69 KiB
+Packager        : Christian Hesse <eworm@archlinux.org>
+Build Date      : Mon 20 Apr 2026 03:13:28 PM IST
+Install Date    : Sat 30 May 2026 11:16:27 PM IST
+Install Reason  : Installed as a dependency for another package
+Install Script  : Yes
+Validated By    : Signature
+
+[hrj@HRJ ~]$ pacman -Ss "^nvidia$"
+[hrj@HRJ ~]$ pacman -Ss nvidia-utils
+extra/nvidia-utils 610.43.02-2
+    NVIDIA drivers utilities
 [hrj@HRJ ~]$ 
