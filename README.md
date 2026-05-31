@@ -43,4 +43,22 @@ PCI access options:
 -F <file>	Read PCI configuration dump from a given file
 [hrj@HRJ ~]$ quickshell --version
 bash: quickshell: command not found
-[hrj@HRJ ~]$ 
+[hrj@HRJ ~]
+$ 
+
+
+
+
+
+
+
+[hrj@HRJ ~]$ lspci -k | grep -A 3 NVIDIA
+01:00.0 VGA compatible controller: NVIDIA Corporation TU117M [GeForce GTX 1650 Mobile / Max-Q] (rev a1)
+	Subsystem: ASUSTeK Computer Inc. Device 170d
+	Kernel driver in use: nouveau
+	Kernel modules: nouveau
+01:00.1 Audio device: NVIDIA Corporation Device 10fa (rev a1)
+	Subsystem: ASUSTeK Computer Inc. Device 170d
+	Kernel driver in use: snd_hda_intel
+	Kernel modules: snd_hda_intel
+[hrj@HRJ ~]$ ^C
