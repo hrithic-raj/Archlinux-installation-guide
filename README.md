@@ -7,3 +7,7 @@ hyprland  hyprland.conf  scheme  scripts  variables.conf
 [hrj@HRJ caelestia]$ ls ~/.config/fish
 config.fish  functions
 [hrj@HRJ caelestia]$ 
+
+
+
+sed -n '1,50p' ~/.local/share/caelestia/hypr/hyprland.conf
