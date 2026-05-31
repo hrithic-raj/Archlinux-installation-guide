@@ -1,30 +1,46 @@
-[hrj@HRJ ~]$ sudo pacman -S \
-kitty \
-thunar \
-waybar \
-dunst \
-wl-clipboard \
-brightnessctl \
-network-manager-applet \
-pavucontrol \
-fuzzel
-[sudo] password for hrj: 
-warning: kitty-0.46.2-1 is up to date -- reinstalling
-warning: thunar-4.20.8-3 is up to date -- reinstalling
-warning: waybar-0.15.0-2 is up to date -- reinstalling
-warning: dunst-1.13.2-1 is up to date -- reinstalling
-warning: wl-clipboard-1:2.3.0-1 is up to date -- reinstalling
-warning: brightnessctl-0.5.1-3 is up to date -- reinstalling
-warning: network-manager-applet-1.36.0-2 is up to date -- reinstalling
-resolving dependencies...
-looking for conflicting packages...
+[hrj@HRJ ~]$ yay --version
+yay v12.5.7 - libalpm v16.0.1
+[hrj@HRJ ~]$ lspci -K | grep -A 3 NVIDIA
+lspci: invalid option -- 'K'
+Usage: lspci [<switches>]
 
-Packages (12) fcft-3.3.3-1  libutf8proc-2.11.3-1  resvg-0.47.0-2  brightnessctl-0.5.1-3  dunst-1.13.2-1  fuzzel-1.14.1-1  kitty-0.46.2-1  network-manager-applet-1.36.0-2  pavucontrol-1:6.2-1  thunar-4.20.8-3
-              waybar-0.15.0-2  wl-clipboard-1:2.3.0-1
+Basic display modes:
+-mm		Produce machine-readable output (single -m for an obsolete format)
+-t		Show bus tree
 
-Total Download Size:    3.70 MiB
-Total Installed Size:  88.30 MiB
-Net Upgrade Size:      13.36 MiB
+Display options:
+-v		Be verbose (-vv or -vvv for higher verbosity)
+-k		Show kernel drivers handling each device
+-x		Show hex-dump of the standard part of the config space
+-xxx		Show hex-dump of the whole config space (dangerous; root only)
+-xxxx		Show hex-dump of the 4096-byte extended config space (root only)
+-b		Bus-centric view (addresses and IRQ's as seen by the bus)
+-D		Always show domain numbers
+-P		Display bridge path in addition to bus and device number
+-PP		Display bus path in addition to bus and device number
 
-:: Proceed with installation? [Y/n] 
+Resolving of device IDs to names:
+-n		Show numeric IDs
+-nn		Show both textual and numeric IDs (names & numbers)
+-q		Query the PCI ID database for unknown IDs via DNS
+-qq		As above, but re-query locally cached entries
+-Q		Query the PCI ID database for all IDs via DNS
 
+Selection of devices:
+-s [[[[<domain>]:]<bus>]:][<slot>][.[<func>]]	Show only devices in selected slots
+-d [<vendor>]:[<device>][:<class>]		Show only devices with specified IDs
+
+Other options:
+-i <file>	Use specified ID database instead of /usr/share/hwdata/pci.ids
+-p <file>	Look up kernel modules in a given file instead of default modules.pcimap
+-M		Enable `bus mapping' mode (dangerous; root only)
+
+PCI access options:
+-A <method>	Use the specified PCI access method (see `-A help' for a list)
+-O <par>=<val>	Set PCI access parameter (see `-O help' for a list)
+-G		Enable PCI access debugging
+-H <mode>	Use direct hardware access (<mode> = 1 or 2)
+-F <file>	Read PCI configuration dump from a given file
+[hrj@HRJ ~]$ quickshell --version
+bash: quickshell: command not found
+[hrj@HRJ ~]$ 
